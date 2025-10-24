@@ -1,0 +1,5 @@
+os
+pypdf2
+pandas
+langchain-community
+
