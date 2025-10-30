@@ -10,7 +10,7 @@ import google.generativeai as genai
 # ---------- CONFIG ----------
 PDF_FOLDER = r"C:\Users\HP\Desktop\Project\-PH.D.-RESEARCH-SUPPORT-BOT-RAG-BASED-DOCUMENT-ASSISTANT-\pdfs"
 CHROMA_DB_DIR = r"C:\Users\HP\Desktop\Project\-PH.D.-RESEARCH-SUPPORT-BOT-RAG-BASED-DOCUMENT-ASSISTANT-\chroma_db"
-GOOGLE_API_KEY = "AIzaSyAOn7HhN8Mfv46e6RPYuQ31BDZax_a1mXE"   # 🔑 Replace with your key
+GOOGLE_API_KEY = "Your API KEY"   # 🔑 Replace with your key
 
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 genai.configure(api_key=GOOGLE_API_KEY)
