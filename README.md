@@ -26,7 +26,7 @@ A powerful document assistant that helps researchers find answers in their PDF d
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/research-support-bot.git
+   git clone https://github.com/Gowthamsasiku/research-support-bot.git
    cd research-support-bot
    ```
 
