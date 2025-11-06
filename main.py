@@ -6,13 +6,20 @@ from sentence_transformers import SentenceTransformer
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 import google.generativeai as genai
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # ---------- CONFIG ----------
-PDF_FOLDER = r"C:\Users\HP\Desktop\Project\-PH.D.-RESEARCH-SUPPORT-BOT-RAG-BASED-DOCUMENT-ASSISTANT-\pdfs"
-CHROMA_DB_DIR = r"C:\Users\HP\Desktop\Project\-PH.D.-RESEARCH-SUPPORT-BOT-RAG-BASED-DOCUMENT-ASSISTANT-\chroma_db"
-GOOGLE_API_KEY = "Your API KEY"   # 🔑 Replace with your key
+PDF_FOLDER = r"-PH.D.-RESEARCH-SUPPORT-BOT-RAG-BASED-DOCUMENT-ASSISTANT--main\pdfs"
+CHROMA_DB_DIR = r"-PH.D.-RESEARCH-SUPPORT-BOT-RAG-BASED-DOCUMENT-ASSISTANT--main\chroma_db"
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
+if not GOOGLE_API_KEY:
+    raise ValueError("Google API key not found in .env file")
+
+# Configure Google Generative AI
 genai.configure(api_key=GOOGLE_API_KEY)
 
 
