@@ -111,10 +111,6 @@ If you encounter any issues, please:
 2. Ensure all dependencies are installed correctly
 3. Verify your PDF files are accessible and not corrupted
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - [Streamlit](https://streamlit.io/) for the web interface
